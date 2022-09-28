@@ -43,8 +43,16 @@ img {
   justify-content: space-between;
  }
 
+ .justify-center {
+  justify-content: center;
+ }
+
  .align-center {
   align-items: center;
+ }
+
+ .wrap {
+  flex-wrap: wrap;
  }
 
  .font-white {
@@ -74,14 +82,12 @@ img {
   height: calc(100vh - 75px);
   background-color: yellow;
 }
-
-
-
 /* SIDEBAR */
 .sidebar {
   width: 200px;
   flex-direction: column;
   overflow: auto;
+  padding-bottom: 20px;
 }
 
 .logo {
@@ -96,7 +102,6 @@ img {
 .left-container {
   width: calc(100% - 200px);
   height: 100%;
-  background-color: pink;
   overflow: auto;
 }
 /* 
@@ -116,6 +121,25 @@ header {
 main {
   width: 100%;
   margin-top: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+/* MENU-SECTION */
+.menu li {
+  margin: 0 15px;
+}
+
+.col {
+  background-color: red;
+  height: 200px;
+  border: 1px solid black;
+  min-width: 200px;
+  width: calc(100% / 3 - 20px);
 }
 
 /* FOOTER */
@@ -123,4 +147,4 @@ footer {
   width: 100%;
   height: 75px;
   background-color: aqua;
-}
+} 
