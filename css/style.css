@@ -210,10 +210,38 @@ footer {
   height: 75px;
 } 
 
-.left {
-  max-width: 200px;
+footer .col.right, .col.left {
+  width: 20%;
 }
 
-footer img {
+footer .col.center {
+  width: 60%;
+  row-gap: 10px;
+}
+
+footer .left .box {
+  max-width: 200px;
+  height: 100%;
+}
+footer .left img {
   height: 50%;
+}
+
+footer .center .top, footer .center .bottom {
+  width: 100%;
+}
+
+.center .track-bar {
+  width: 50%;
+  height: 3px;
+}
+
+.center  .track-left {
+  width: 20% ;
+  background-color: #c1c1c1;
+}
+
+.center .track-right {
+  width: 80%;
+  background-color: #5a5a5a;
 }
