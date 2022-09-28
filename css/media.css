@@ -32,4 +32,8 @@
   .card {
     width: calc(100% / 2 - 1rem)
   }
+
+  footer .left .icon {
+    flex-direction: column;
+  }
 }

@@ -32,8 +32,8 @@ img {
 }
 
 .bg-dark {
-  background-color: #080b12;
-  opacity: 0.5;
+  background-color: rgba(0, 0,0, 0.5);
+  
 }
 
 .font-white {
@@ -98,7 +98,6 @@ a {
  /* MAIN CONTAINER */
 .main-container {
   height: calc(100vh - 75px);
-  background-color: yellow;
 }
 
 /* SIDEBAR */
@@ -167,6 +166,12 @@ header {
   line-height: 80px;
 }
 
+.btn {
+  border: 2px solid white;
+  padding: 10px 35px;
+  border-radius: 20px;
+}
+
 /* MAIN */
 main {
   width: 100%;
@@ -178,6 +183,7 @@ main {
 section {
   margin-bottom: 40px;
 }
+
 
 /* MENU-SECTION */
 .menu li {
@@ -194,8 +200,37 @@ section {
   width: calc(100% / 6 - 1rem);
 }
 
+.box-photo {
+  position: relative;
+}
+
 .card img {
   width: 100%;
+}
+
+.opacity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0,0, 0.5);
+  font-size: 4rem;
+}
+
+.opacity i {
+  
+}
+
+
+
+.card:hover .opacity {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* POPULAR-SECTION */
@@ -224,10 +259,9 @@ footer .col.right, .col.left {
 
 footer .col.center {
   height: 100%;
-  width: calc(100% - 400px - 20px);
+  width: calc(100% - 400px);
   row-gap: 10px;
 }
-
 
 footer .left img {
   height: 50%;
@@ -238,6 +272,7 @@ footer .center .top, footer .center .bottom {
 }
 
 .track-bar {
+  min-width: 60px;
   width: 50%;
   height: 3px;
 }
@@ -245,13 +280,15 @@ footer .center .top, footer .center .bottom {
 .track-left {
   width: 20% ;
   background-color: #c1c1c1;
+  border-radius: 15%;
 }
 
 .track-right {
   width: 80%;
   background-color: #5a5a5a;
+  border-radius: 15%;
 }
 
-footer .right {
-
+.center .top *, .center .duration, .center .timing {
+  margin: 0 5px;
 }
