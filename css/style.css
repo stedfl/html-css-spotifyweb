@@ -52,6 +52,10 @@ img {
   align-items: center;
  }
 
+ .column-dir {
+  flex-direction: column;
+ }
+
  .wrap {
   flex-wrap: wrap;
  }
@@ -90,9 +94,16 @@ img {
 /* SIDEBAR */
 .sidebar {
   width: 200px;
-  flex-direction: column;
   overflow: auto;
   padding-bottom: 20px;
+}
+
+.full-menu {
+  height: 100%;
+}
+
+.mobile-menu {
+  display: none;
 }
 
 .logo {

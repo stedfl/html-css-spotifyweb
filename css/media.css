@@ -5,6 +5,30 @@
 }
 
 @media screen  and (max-width: 640px) {
+  .sidebar {
+    width: 40px;
+    padding: 5px;
+  }
+
+  .left-container {
+    width: calc(100% - 40px);
+  }
+
+  header {
+    width: calc(100% - 40px);
+  }
+
+  .full-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .mobile-menu img {
+    width: 70%;
+  }
   .card {
     width: calc(100% / 2 - 1rem)
   }
