@@ -205,24 +205,30 @@ section {
 
 /* FOOTER */
 footer {
-  padding: 0 10px;
   width: 100%;
   height: 75px;
 } 
 
 footer .col.right, .col.left {
-  width: 20%;
+  width: 200px;
+  height: 100%;
+}
+
+.col.left{
+  padding-left: 10px;
+}
+
+.col.right {
+  padding-right: 10px;
 }
 
 footer .col.center {
-  width: 60%;
+  height: 100%;
+  width: calc(100% - 400px - 20px);
   row-gap: 10px;
 }
 
-footer .left .box {
-  max-width: 200px;
-  height: 100%;
-}
+
 footer .left img {
   height: 50%;
 }
@@ -231,17 +237,21 @@ footer .center .top, footer .center .bottom {
   width: 100%;
 }
 
-.center .track-bar {
+.track-bar {
   width: 50%;
   height: 3px;
 }
 
-.center  .track-left {
+.track-left {
   width: 20% ;
   background-color: #c1c1c1;
 }
 
-.center .track-right {
+.track-right {
   width: 80%;
   background-color: #5a5a5a;
+}
+
+footer .right {
+
 }
