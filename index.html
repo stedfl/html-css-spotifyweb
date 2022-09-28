@@ -7,58 +7,107 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
   <title>Spotify</title>
 </head>
 <body>
   <div class="main-container d-flex">
-    <div class="sidebar bg-black d-flex space-between p20">
-      <nav>  
-        <div class="logo d-flex align-center">
-          <img src="img/logo.svg" alt="logo">
-        </div>
-        <div class="home">
+    <div class="sidebar bg-black p20">
+      <div class="full-menu d-flex space-between column-dir">
+        <nav>  
+          <div class="logo d-flex align-center">
+            <img src="img/logo.svg" alt="logo">
+          </div>
+          <div class="home">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Cerca</a> 
+              </li>
+              <li>
+                <a href="#">La tua libreria</a> 
+              </li>
+            </ul>
+          </div>
+          <div class="playlist">
+            <h4 class="font-white">Playlist</h4>
+            <h5>Crea Playlist</h5>
+            <ul>
+              <li>
+                <a href="#">Allenamento</a> 
+              </li>
+              <li>
+                <a href="#">Relaxing Music</a> 
+              </li>
+              <li>
+                <a href="#">Musica Classica</a> 
+              </li>
+              <li>
+                <a href="#">Best of Opera</a> 
+              </li>
+              <li>
+                <a href="#">Film Soundtrack</a> 
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="bottom">
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="#">
+                <img class=download-img src="img/download.svg" alt="download">
+                <span>Installa app</span>
+              </a>
             </li>
+            <div class="horizontal-bar"></div>
             <li>
-              <a href="#">Cerca</a> 
+              <a class="avatar" href="#">
+                <img src="/img/profile.svg" alt="avatar">
+                <span>John Doe</span>
+              </a>
             </li>
-            <li>
-              <a href="#">La tua libreria</a> 
-            </li>
-          </ul>
+          </ul> 
         </div>
-        <div class="playlist">
-          <h4 class="font-white">Playlist</h4>
-          <h5>Crea Playlist</h5>
+      </div>
+      
+      <div class="mobile-menu space-between column-dir tx-center">
+        <div class="top">
           <ul>
             <li>
-              <a href="#">Allenamento</a> 
+              <a href="#"><img src="img/logo-small.svg" alt="logo"></a>
             </li>
             <li>
-              <a href="#">Relaxing Music</a> 
+              <a href="#"><img src="img/home.svg" alt="home"></a>
             </li>
             <li>
-              <a href="#">Musica Classica</a> 
+              <a href="#"><img src="img/search.svg" alt="search"></a>
             </li>
             <li>
-              <a href="#">Best of Opera</a> 
-            </li>
-            <li>
-              <a href="#">Film Soundtrack</a> 
+              <a href="#"><img src="img/libreria.svg" alt="library"></a>
             </li>
           </ul>
+          <a href="#"></a>
         </div>
-      </nav>
-      <div class="bottom">
-        <p>Installa app</p>
-        <div>horizontal-bar</div>
-        <div class="avatar"></div>
-        <img src="" alt="avatar">
-        <p>Name</p>
+        <div class="bottom">
+          <ul>
+            <li>
+              <a href="#"><img src="img/download.svg" alt="download"></a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="avatar">
+                  <img src="/img/profile.svg" alt="avatar">
+                </div>
+              </a>
+            </li>
+          </ul>
+          
+         
+        </div>
       </div>
     </div>
    
@@ -176,17 +225,36 @@
               </div>
             </div>                
           </div>
-          
-          
         </section>
-    
-
       </main>
         
 
     </div>
   </div>
-  <footer class="bg-gray"></footer>
+  <footer class="bg-gray d-flex space-between">
+    <div class="left d-flex space-between align-center">
+      <img src="img/sinister.jpeg" alt="album sinister">
+      <div class="title">
+        <h3>Sinister</h3>
+        <p>Nome brano</p>
+      </div>
+      <div class="icon d-flex align-center">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-regular fa-folder"></i>
+      </div>
+    </div>
+    <div class="center d-flex justify-center align-center">
+      <div class="top">
+        <i class="fa-solid fa-shuffle"></i>
+        <i class="fa-solid fa-backward-step"></i>
+        <i class="fa-regular fa-circle-play"></i>
+        <i class="fa-solid fa-forward-step"></i>
+        <i class="fa-solid fa-rotate-right"></i>     
+      </div>
+      <div class="bottom"></div>
+    </div>
+    <div class="right"></div>
+  </footer>
   
 </body>
 </html>
