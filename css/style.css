@@ -320,21 +320,23 @@ section {
   width: 100%;
 }
 
-.opacity {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0,0, 0.5);
-  font-size: 4rem;
+.box-photo i {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  cursor: pointer;
 }
 
+.card img:hover {
+  filter: brightness(50%);
+  cursor: pointer;
+}
 
-.card:hover .opacity {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.card img:hover + i {
+  display: block;
 }
 
 .recently h2:first-child {
@@ -436,6 +438,10 @@ footer .left .icon{
 
 .center .top .icon.play {
   font-size: 1.8rem;
+}
+
+.center .top .icon.play:hover {
+  font-size: 2rem;
 }
 
 .center .bottom span {
