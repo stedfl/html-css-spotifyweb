@@ -1,14 +1,24 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1050px) {
   .card {
     width: calc(100% / 4 - 1rem);
   }
 
   .box-photo i {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 }
 
-@media screen  and (max-width: 640px) {
+@media screen and (max-width: 850px) {
+  .card {
+    width: calc(100% / 2 - 2rem)
+  }
+
+  .box-photo i {
+    font-size: 5rem;
+  }
+}
+
+@media screen  and (max-width: 600px) {
   .sidebar {
     width: 40px;
     padding: 5px;
@@ -25,6 +35,7 @@
 
   .sidebar .logo {
     height: 40px;
+    justify-content: center;
   }
 
   svg.mobile-menu {
@@ -34,11 +45,23 @@
   .full-menu li {
     display: block;
     text-align: center;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+
+  .menu li:active .underline {
+    background-color: transparent;
   }
 
   .full-menu .top svg {
     width: 80%;
     margin: 0;
+  }
+
+  .full-menu .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   .left-container {
@@ -47,14 +70,6 @@
 
   header {
     width: calc(100% - 40px);
-  }
-
-  .card {
-    width: calc(100% / 2 - 1rem)
-  }
-
-  .box-photo i {
-    font-size: 5rem;
   }
 
   footer .left .icon.d-flex {
@@ -77,5 +92,4 @@
   footer .right .icon {
     margin-right: 10px;
   }
-  
 }
