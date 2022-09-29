@@ -88,7 +88,6 @@ img {
   text-align: center;
 }
 
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -109,7 +108,7 @@ a {
 }
 
 h3 {
-  font-size: 1rem ;
+  font-size: 0.9rem ;
   color: white;
   margin: 1rem 0 0.4rem;
 }
@@ -118,14 +117,16 @@ h4 {
   font-size: 0.8rem ;
 }
 
-h5 {
-  font-size: ;
-} 
-
 p {
   font-size: 1rem;
   margin: 1rem 0 2rem;
 }
+
+.active:hover {
+  color: white;
+}
+
+
 
  /* MAIN CONTAINER */
 .main-container {
@@ -244,14 +245,26 @@ header {
   top: 0;
   right: 0;
   z-index: 999;
-  text-align: end;
   line-height: 80px;
+  justify-content: flex-end;
 }
 
 .btn {
-  border: 2px solid white;
-  padding: 10px 35px;
+  display: inline-block;
+  height: 40px;
+  width: 250px;
+  line-height: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.9);
   border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.btn:hover {
+  transition: all 0.5s;
+  transform: scale(1.1,1.1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 /* MAIN */
@@ -277,10 +290,6 @@ section {
   height: 2px;
   background-color: transparent;
   width: 50%;
-}
-
-.menu li a:hover {
-  color: white;
 }
 
 .menu li:active .underline {
@@ -341,20 +350,17 @@ footer {
 footer .col.right, .col.left {
   width: 200px;
   height: 100%;
-}
-
-.col.left{
-  padding-left: 10px;
-}
-
-.col.right {
-  padding-right: 10px;
+  padding: 0 10px;
 }
 
 footer .col.center {
   height: 100%;
   width: calc(100% - 400px);
-  row-gap: 10px;
+  row-gap: 5px;
+}
+
+footer .center .top, footer .center .bottom {
+  width: 100%;
 }
 
 footer .album {
@@ -365,13 +371,17 @@ footer .album img {
   height: 50%;
 }
 
-footer .center .top, footer .center .bottom {
-  width: 100%;
+.album .title {
+  margin-left: 10px;
+}
+
+footer .left .icon{
+  margin: 0 5px;
 }
 
 .track-bar {
   min-width: 60px;
-  width: 50%;
+  width: 40%;
   height: 3px;
 }
 
@@ -386,6 +396,19 @@ footer .center .top, footer .center .bottom {
   border-radius: 15%;
 }
 
-.center .top *, .center .duration, .center .timing {
+.center .top * {
   margin: 0 5px;
+}
+
+.center .top .icon.play {
+  font-size: 1.8rem;
+}
+
+.center .bottom span {
+  font-size: 0.6rem;
+  margin: 0 20px;
+}
+
+footer .right .icon {
+  margin-right: 20px;
 }

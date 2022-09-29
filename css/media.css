@@ -33,7 +33,25 @@
     width: calc(100% / 2 - 1rem)
   }
 
-  footer .left .icon {
+  footer .left .icon.d-flex {
     flex-direction: column;
+    row-gap: 5px;
   }
+
+  footer .col.right .col.left {
+    width: 150px;
+  }
+  footer .col.center {
+    width: calc(100% - 300px);
+  }
+
+  .center .bottom span {
+    font-size: 0.6rem;
+    margin: 0 10px;
+  }
+
+  footer .right .icon {
+    margin-right: 10px;
+  }
+  
 }
