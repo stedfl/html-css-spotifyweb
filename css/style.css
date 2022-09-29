@@ -122,11 +122,17 @@ p {
   margin: 1rem 0 2rem;
 }
 
-.active:hover {
+.touch:hover .active {
   color: white;
 }
 
+.touch:hover .active-bg {
+  background-color: white;
+}
 
+.active:hover {
+  color: white;
+}
 
  /* MAIN CONTAINER */
 .main-container {
@@ -137,7 +143,7 @@ p {
 .sidebar {
   width: 200px;
   overflow: auto;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .full-menu {
@@ -153,14 +159,8 @@ p {
 }
 
 .full-menu .center {
-  height: calc(100vh - 445px);
+  height: calc(100vh - 455px);
   overflow: auto;
-}
-
-.bottom 
-.mobile-menu {
-  display: none;
-  height: 100%;
 }
 
 .logo {
@@ -171,7 +171,7 @@ p {
   width: 70%;
 }
 
-.full-menu svg {
+.full-menu .top svg {
   width: 15%;
   color:#d2d2d2;
   margin: 0 5px 0 20px;
@@ -182,6 +182,9 @@ p {
   margin-bottom: 8px;
 }
 
+svg.mobile-menu {
+  display: none;
+}
 
 .full-menu .home li:active {
   border-left: 3px solid greenyellow;
@@ -200,6 +203,10 @@ p {
 
 .full-menu h4 {
   margin: 20px 0 10px;
+}
+
+.full-menu .bottom {
+  padding-bottom: 5px;
 }
 
 .horizontal-bar {
@@ -228,7 +235,6 @@ p {
   font-size: 0.8rem;
   font-size: bold;
 }
-
 
 /* LEFT-CONTAINER */
 .left-container {
@@ -375,6 +381,10 @@ footer .album img {
   margin-left: 10px;
 }
 
+.album .title .active:hover {
+  text-decoration: underline;
+}
+
 footer .left .icon{
   margin: 0 5px;
 }
@@ -383,6 +393,7 @@ footer .left .icon{
   min-width: 60px;
   width: 40%;
   height: 3px;
+  cursor: pointer;
 }
 
 .track-left {
