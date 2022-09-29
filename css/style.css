@@ -396,15 +396,38 @@ footer .left .icon{
   cursor: pointer;
 }
 
+.right .track-bar {
+  width: 60%;
+  height: 3px;
+}
+
 .track-left {
-  width: 20% ;
+  width: calc(20% - 5px);
   border-radius: 15%;
+  height: 3px;
+}
+
+.track-bar:hover .track-left {
+  background-color: greenyellow;
+}
+
+.track-bar:hover .track-circle {
+  display: block;
 }
 
 .track-right {
   width: 80%;
   background-color: #5a5a5a;
   border-radius: 15%;
+  height: 3px;
+}
+
+.track-circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: white;
+  display: none;
 }
 
 .center .top * {
@@ -421,5 +444,6 @@ footer .left .icon{
 }
 
 footer .right .icon {
+  font-size: 0.8rem;
   margin-right: 20px;
 }
