@@ -108,25 +108,23 @@ a {
   font-weight: bold;
 }
 
-h2 {
-  font-size: ;
-}
-
 h3 {
-  font-size: ;
+  font-size: 1rem ;
   color: white;
+  margin: 1rem 0 0.4rem;
 }
 
 h4 {
-  font-size: ;
+  font-size: 0.8rem ;
 }
 
 h5 {
   font-size: ;
-}
+} 
 
-.size {
-  font-size: 0.8rem;
+p {
+  font-size: 1rem;
+  margin: 1rem 0 2rem;
 }
 
  /* MAIN CONTAINER */
@@ -184,7 +182,7 @@ h5 {
 }
 
 
-.full-menu .home li:hover {
+.full-menu .home li:active {
   border-left: 3px solid greenyellow;
 }
 
@@ -202,7 +200,6 @@ h5 {
 .full-menu h4 {
   margin: 20px 0 10px;
 }
-
 
 .horizontal-bar {
   width: 100%;
@@ -273,6 +270,21 @@ section {
 /* MENU-SECTION */
 .menu li {
   margin: 0 15px;
+  font-size: 0.9rem;
+}
+
+.menu .underline {
+  height: 2px;
+  background-color: transparent;
+  width: 50%;
+}
+
+.menu li a:hover {
+  color: white;
+}
+
+.menu li:active .underline {
+  background-color: greenyellow;
 }
 
 /* CARD LAYOUT */
@@ -310,6 +322,11 @@ section {
   height: 100%;
 }
 
+.recently h2:first-child {
+  margin-bottom: 2rem;
+}
+
+
 /* POPULAR-SECTION */
 .popular img {
   border-radius: 100%;
@@ -340,7 +357,11 @@ footer .col.center {
   row-gap: 10px;
 }
 
-footer .left img {
+footer .album {
+  height: 100%;
+}
+
+footer .album img {
   height: 50%;
 }
 
