@@ -150,11 +150,11 @@ h5 {
 }
 
 .full-menu .top {
-  height: 210px;
+  height: 300px;
 }
 
 .full-menu .center {
-  height: calc(100vh - 355px);
+  height: calc(100vh - 445px);
   overflow: auto;
 }
 
@@ -175,11 +175,34 @@ h5 {
 .full-menu svg {
   width: 15%;
   color:#d2d2d2;
+  margin: 0 5px 0 20px;
+  cursor: pointer;
+}
+
+.full-menu .home li {
+  margin-bottom: 8px;
+}
+
+
+.full-menu .home li:hover {
+  border-left: 3px solid greenyellow;
 }
 
 .full-menu .plus {
   padding: 5px 8px;
+  margin-right: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
+
+.full-menu li {
+  margin-bottom: 10px;
+}
+
+.full-menu h4 {
+  margin: 20px 0 10px;
+}
+
 
 .horizontal-bar {
   width: 100%;
