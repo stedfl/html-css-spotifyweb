@@ -122,15 +122,15 @@ p {
   margin: 1rem 0 2rem;
 }
 
-.touch:hover .active {
+.touch:hover .hover-white {
   color: white;
 }
 
-.touch:hover .active-bg {
+.touch:hover .hover-bg {
   background-color: white;
 }
 
-.active:hover {
+.hover-white:hover {
   color: white;
 }
 
@@ -146,19 +146,19 @@ p {
   padding-bottom: 10px;
 }
 
-.full-menu {
+.side-menu {
   height: 100%;
 }
 
-.full-menu .bottom {
+.side-menu .bottom {
   height: 70px;
 }
 
-.full-menu .top {
+.side-menu .top {
   height: 300px;
 }
 
-.full-menu .center {
+.side-menu .center {
   height: calc(100vh - 455px);
   overflow: auto;
 }
@@ -171,14 +171,14 @@ p {
   width: 70%;
 }
 
-.full-menu .top svg {
+.side-menu .top svg {
   width: 15%;
   color:#d2d2d2;
   margin: 0 5px 0 20px;
   cursor: pointer;
 }
 
-.full-menu .home li {
+.side-menu .home li {
   margin-bottom: 8px;
 }
 
@@ -186,26 +186,26 @@ svg.mobile-menu {
   display: none;
 }
 
-.full-menu .home li:active {
+.side-menu .home li.active:first-child {
   border-left: 3px solid greenyellow;
 }
 
-.full-menu .plus {
+.side-menu .plus {
   padding: 5px 8px;
   margin-right: 8px;
   font-size: 1.2rem;
   cursor: pointer;
 }
 
-.full-menu li {
+.side-menu li {
   margin-bottom: 10px;
 }
 
-.full-menu h4 {
+.side-menu h4 {
   margin: 20px 0 10px;
 }
 
-.full-menu .bottom {
+.side-menu .bottom {
   padding-bottom: 5px;
 }
 
@@ -231,7 +231,7 @@ svg.mobile-menu {
   vertical-align: middle;
 }
 
-.full-menu a {
+.side-menu a {
   font-size: 0.8rem;
   font-size: bold;
 }
@@ -292,13 +292,14 @@ section {
   font-size: 0.9rem;
 }
 
-.menu .underline {
+.menu .active {
   height: 2px;
   background-color: transparent;
-  width: 50%;
+  width: 35%;
+  margin-top: 3px;
 }
 
-.menu li:active .underline {
+.menu li:first-child .active {
   background-color: greenyellow;
 }
 
@@ -383,7 +384,7 @@ footer .album img {
   margin-left: 10px;
 }
 
-.album .title .active:hover {
+.album .title .hover-underline:hover {
   text-decoration: underline;
 }
 

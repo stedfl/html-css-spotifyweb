@@ -11,11 +11,14 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
   <title>Spotify</title>
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <div class="main-container d-flex">
+
+    <!-- SIDEBAR -->
     <div class="sidebar bg-black">
-      <div class="full-menu d-flex space-between column-dir">
+      <div class="side-menu d-flex space-between column-dir">
       
           <div class="top">
             <div class="logo d-flex align-center p20">
@@ -24,58 +27,58 @@
             </div>
             <div class="home">
               <ul>
-                <li class="d-flex align-center touch">
-                  <svg class="active" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="currentColor"/></svg>
-                  <a class="active screen-menu" href="#">Home</a>
+                <li class="d-flex align-center touch active">
+                  <svg class="hover-white" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="currentColor"/></svg>
+                  <a class="hover-white screen-menu" href="#">Home</a>
                 </li>
-                <li class="d-flex align-center touch">
-                  <svg class="active" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="currentColor" fill-rule="evenodd"/></svg>
-                  <a class="screen-menu active" href="#">Cerca</a> 
+                <li class="d-flex align-center touch active">
+                  <svg class="hover-white" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="currentColor" fill-rule="evenodd"/></svg>
+                  <a class="screen-menu hover-white" href="#">Cerca</a> 
                 </li>
-                <li class="d-flex align-center touch">
-                  <svg class="active" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor"/></svg>
-                  <a class="screen-menu active" href="#">La tua libreria</a> 
+                <li class="d-flex align-center touch active">
+                  <svg class="hover-white" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor"/></svg>
+                  <a class="screen-menu hover-white" href="#">La tua libreria</a> 
                 </li class="d-flex">
               </ul>
             </div>
             
-            <h4 class="font-white uppercase p20 active screen-menu">Playlist</h4>
+            <h4 class="font-white uppercase p20 hover-white screen-menu">Playlist</h4>
             <div class="d-flex align-center p20 screen-menu touch">
-              <span class="plus bg-lightgray screen-menu active-bg"><i class="fa-solid fa-plus font-black"></i></span>
-              <h5 class="screen-menu active">Crea Playlist</h5>
+              <span class="plus bg-lightgray screen-menu hover-bg"><i class="fa-solid fa-plus font-black"></i></span>
+              <h5 class="screen-menu hover-white">Crea Playlist</h5>
             </div>
           </div>
 
           <ul class="center p20 screen-menu">
             <li>
-              <a class="active" href="#">Workout</a> 
+              <a class="hover-white" href="#">Workout</a> 
             </li>
             <li>
-              <a class="active" href="#">Relaxing Music</a> 
+              <a class="hover-white" href="#">Relaxing Music</a> 
             </li>
             <li>
-              <a class="active" href="#">Musica Classica</a> 
+              <a class="hover-white" href="#">Musica Classica</a> 
             </li>
             <li>
-              <a class="active" href="#">Best of Opera</a> 
+              <a class="hover-white" href="#">Best of Opera</a> 
             </li>
             <li>
-              <a class="active" href="#">Happy Mix</a> 
+              <a class="hover-white" href="#">Happy Mix</a> 
             </li>
             <li>
-              <a class="active" href="#">Folk and Acoustic Mix</a> 
+              <a class="hover-white" href="#">Folk and Acoustic Mix</a> 
             </li>
             <li>
-              <a class="active" href="#">The Cinematic Orchestra</a> 
+              <a class="hover-white" href="#">The Cinematic Orchestra</a> 
             </li>
             <li>
-              <a class="active" href="#">Enya</a> 
+              <a class="hover-white" href="#">Enya</a> 
             </li>
             <li>
-              <a class="active" href="#">Damien Rice</a> 
+              <a class="hover-white" href="#">Damien Rice</a> 
             </li>
             <li>
-              <a class="active" href="#">Ocie Elliot</a> 
+              <a class="hover-white" href="#">Ocie Elliot</a> 
             </li>
           </ul>
           
@@ -84,8 +87,8 @@
           <ul>
             <li>
               <a class="touch" href="#">
-                <svg class="download-img active" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Download icon</title><path d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z" fill-rule="evenodd"/></svg>
-                <span class="screen-menu active">Installa app</span>
+                <svg class="download-img hover-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Download icon</title><path d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z" fill-rule="evenodd"/></svg>
+                <span class="screen-menu hover-white">Installa app</span>
               </a>
             </li>
             <div class="horizontal-bar screen-menu"></div>
@@ -99,38 +102,39 @@
         </div>
       </div>
     </div>
+    <!-- /SIDEBAR -->
    
     <div class="left-container bg-darkblue">
       <header class="d-flex align-center bg-dark p20">
-        <a href="#" class="btn active font-white bold uppercase tx-center">Effettua l'upgrade</a>
+        <a href="#" class="btn hover-size font-white bold uppercase tx-center">Effettua l'upgrade</a>
       </header>
       <main class="p20" >
         <section class="menu">
           <nav>
             <ul class="d-flex justify-center wrap uppercase">
               <li class="d-flex column-dir align-center">
-                <a class="active" href="#">in evidenza</a>
-                <div class="underline"></div>
+                <a class="hover-white" href="#">in evidenza</a>
+                <div class="active"></div>
               </li>
               <li class="d-flex column-dir align-center">
-                <a class="active" href="#">podcast</a>
-                <div class="underline"></div>
+                <a class="hover-white" href="#">podcast</a>
+                <div class="active""></div>
               </li>
               <li class="d-flex column-dir align-center">
-                <a class="active" href="#">classifiche</a>
-                <div class="underline"></div>
+                <a class="hover-white" href="#">classifiche</a>
+                <div class="active"></div>
               </li>
               <li class="d-flex column-dir align-center">
-                <a class="active" href="#">generi e mood</a>
-                <div class="underline"></div>
+                <a class="hover-white" href="#">generi e mood</a>
+                <div class="active"></div>
               </li>
               <li class="d-flex column-dir align-center">
-                <a class="active" href="#">nuove uscite</a>
-                <div class="underline"></div>
+                <a class="hover-white" href="#">nuove uscite</a>
+                <div class="active"></div>
               </li>
               <li class="d-flex column-dir align-center">
-                <a class="active" href="#">scopri</a>
-                <div class="underline"></div>
+                <a class="hover-white" href="#">scopri</a>
+                <div class="active"></div>
               </li>
             </ul>
           </nav>
@@ -261,12 +265,12 @@
           <img src="img/sinister.jpeg" alt="album sinister">
           <div class="title">
             <h6 class="font-white">Sinister</h6>
-            <h6 class="active">Never go</h6>
+            <h6 class="hover-white hover-underline">Never go</h6>
           </div>
         </div>   
         <div class="icon d-flex align-center">
-          <i class="fa-regular fa-heart icon heart active"></i>
-          <i class="fa-regular fa-folder icon folder active"></i>
+          <i class="fa-regular fa-heart icon heart hover-white"></i>
+          <i class="fa-regular fa-folder icon folder hover-white"></i>
         </div>  
     </div>
     <div class="center col d-flex column-dir align-center justify-center">
