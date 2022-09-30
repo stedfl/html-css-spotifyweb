@@ -174,20 +174,21 @@ p {
 .side-menu .top svg {
   width: 15%;
   color:#d2d2d2;
-  margin: 0 5px 0 20px;
+  margin: 0 5px 0 17px;
   cursor: pointer;
 }
 
 .side-menu .home li {
   margin-bottom: 8px;
+  border-left: 3px solid transparent;
 }
 
 svg.mobile-menu {
   display: none;
 }
 
-.side-menu .home li.active:first-child {
-  border-left: 3px solid greenyellow;
+.side-menu .home li.active {
+  border-color:greenyellow;
 }
 
 .side-menu .plus {
@@ -267,7 +268,7 @@ header {
 }
 
 .btn:hover {
-  transition: all 0.5s;
+  transition: all 0.2s;
   transform: scale(1.1,1.1);
   border: 1px solid rgba(255, 255, 255, 1);
   color: rgba(255, 255, 255, 1);
