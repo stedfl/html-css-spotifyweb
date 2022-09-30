@@ -370,15 +370,22 @@ footer .col.right, .col.left {
 footer .col.center {
   height: 100%;
   width: calc(100% - 400px);
-  row-gap: 5px;
 }
 
-footer .center .top, footer .center .bottom {
+footer .center .top {
+  height: 60%;
+  width: 100%;
+  margin: 10px 0;
+}
+
+footer .center .bottom {
+  height: 40%;
   width: 100%;
 }
 
 footer .album {
   height: 100%;
+  cursor: pointer;
 }
 
 footer .album img {
@@ -398,15 +405,16 @@ footer .left .icon{
 }
 
 .center .top * {
-  margin: 0 5px;
+  margin: 0 10px;
 }
 
 .center .top .icon.play {
   font-size: 1.8rem;
+  margin: 0 20px;
 }
 
 .center .top .icon.play:hover {
-  font-size: 2rem;
+  transform: scale(1.2);
 }
 
 .center .bottom span {
@@ -461,4 +469,9 @@ footer .left .icon{
 footer .right .icon {
   font-size: 0.8rem;
   margin-right: 20px;
+  
+}
+
+footer .icon {
+  cursor: pointer;
 }

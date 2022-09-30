@@ -85,6 +85,10 @@
     width: calc(100% - 300px);
   }
 
+  .center .top .icon.play {
+    margin: 0 15px;
+  }
+
   footer .center .bottom span {
     font-size: 0.6rem;
     margin: 0 10px;
