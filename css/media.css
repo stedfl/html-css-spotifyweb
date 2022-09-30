@@ -29,7 +29,7 @@
     margin: 0;
   }
 
-  .screen-menu {
+  .full-menu {
     display: none;
   }
 
@@ -49,13 +49,13 @@
     margin-top: 10px;
   }
 
-  .menu li:active .underline {
-    background-color: transparent;
-  }
-
   .side-menu .top svg {
     width: 80%;
     margin: 0;
+  }
+
+  .side-menu .home li.active:first-child {
+    border-left: 0 transparent;
   }
 
   .side-menu .bottom {
@@ -91,5 +91,9 @@
 
   footer .right .icon {
     margin-right: 10px;
+  }
+
+  .track-bar {
+    width: 60%;
   }
 }
