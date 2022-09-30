@@ -29,6 +29,10 @@
     margin: 0;
   }
 
+  .left-container {
+    width: calc(100% - 40px);
+  }
+
   .full-menu {
     display: none;
   }
@@ -55,17 +59,13 @@
   }
 
   .side-menu .home li.active {
-    border-color: transparent;
+    border: 0;
   }
 
   .side-menu .bottom {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-  }
-
-  .left-container {
-    width: calc(100% - 40px);
   }
 
   header {
@@ -77,14 +77,15 @@
     row-gap: 5px;
   }
 
-  footer .col.right .col.left {
+  footer .col.right, .col.left {
     width: 150px;
   }
+  
   footer .col.center {
     width: calc(100% - 300px);
   }
 
-  .center .bottom span {
+  footer .center .bottom span {
     font-size: 0.6rem;
     margin: 0 10px;
   }

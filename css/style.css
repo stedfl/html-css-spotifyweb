@@ -19,7 +19,11 @@ img {
   max-height: 100%;
 }
 
-/* UTILITIES */
+/* ************************* */
+/*         UTILITIES         */
+/* ************************* */
+
+/* BACKGROUND */
 .bg-black {
   background-color: black;
 }
@@ -40,6 +44,7 @@ img {
   background-color: rgba(0, 0,0, 0.5);
 }
 
+/* FONT */
 .font-white {
   color: #ffffff;
 }
@@ -60,6 +65,16 @@ img {
   font-weight: bold;
 }
 
+/* TEXT STYLE */
+.tx-center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* FLEX */
 .d-flex {
   display: flex;
 }
@@ -84,19 +99,13 @@ img {
   flex-wrap: wrap;
 }
 
-.tx-center {
-  text-align: center;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
+/* PADDING/MARGIN */
 .p20 {
   padding-left: 20px;
   padding-right: 20px;
 }
 
+/* GENERAL */
 li {
   list-style: none;
 }
@@ -122,6 +131,11 @@ p {
   margin: 1rem 0 2rem;
 }
 
+.main-container {
+  height: calc(100vh - 75px);
+}
+
+/* HOVER EFFECT */
 .touch:hover .hover-white {
   color: white;
 }
@@ -134,15 +148,10 @@ p {
   color: white;
 }
 
- /* MAIN CONTAINER */
-.main-container {
-  height: calc(100vh - 75px);
-}
-
 /* SIDEBAR */
 .sidebar {
   width: 200px;
-  overflow: auto;
+  overflow: hidden;
   padding-bottom: 10px;
 }
 
@@ -150,16 +159,31 @@ p {
   height: 100%;
 }
 
-.side-menu .bottom {
-  height: 70px;
+.side-menu h4 {
+  margin: 20px 0 10px;
+}
+
+.side-menu a {
+  font-size: 0.8rem;
+  font-size: bold;
+}
+
+.side-menu li {
+  margin-bottom: 10px;
 }
 
 .side-menu .top {
-  height: 300px;
+  height: 270px;
+  margin-bottom: 20px;
+}
+
+.side-menu .bottom {
+  height: 70px;
+  margin-top: 20px;
 }
 
 .side-menu .center {
-  height: calc(100vh - 455px);
+  height: calc(100vh - 415px);
   overflow: auto;
 }
 
@@ -183,12 +207,12 @@ p {
   border-left: 3px solid transparent;
 }
 
-svg.mobile-menu {
-  display: none;
-}
-
 .side-menu .home li.active {
   border-color:greenyellow;
+}
+
+svg.mobile-menu {
+  display: none;
 }
 
 .side-menu .plus {
@@ -196,18 +220,6 @@ svg.mobile-menu {
   margin-right: 8px;
   font-size: 1.2rem;
   cursor: pointer;
-}
-
-.side-menu li {
-  margin-bottom: 10px;
-}
-
-.side-menu h4 {
-  margin: 20px 0 10px;
-}
-
-.side-menu .bottom {
-  padding-bottom: 5px;
 }
 
 .horizontal-bar {
@@ -220,7 +232,6 @@ svg.mobile-menu {
 .download-img {
   width: 15px;
   vertical-align: middle;
-  background-color: ;
 }
 
 .avatar img {
@@ -230,11 +241,6 @@ svg.mobile-menu {
   width: 20px;
   height: 20px;
   vertical-align: middle;
-}
-
-.side-menu a {
-  font-size: 0.8rem;
-  font-size: bold;
 }
 
 /* LEFT-CONTAINER */
@@ -286,21 +292,20 @@ section {
   margin-bottom: 40px;
 }
 
-
-/* MENU-SECTION */
+/* MENU SECTION */
 .menu li {
   margin: 0 15px 25px;
   font-size: 0.9rem;
 }
 
-.menu .active {
+.menu li .active {
   height: 2px;
   background-color: transparent;
   width: 35%;
   margin-top: 3px;
 }
 
-.menu li:first-child .active {
+.menu li .active {
   background-color: greenyellow;
 }
 
@@ -344,7 +349,6 @@ section {
 .recently h2:first-child {
   margin-bottom: 2rem;
 }
-
 
 /* POPULAR-SECTION */
 .popular img {
@@ -393,43 +397,6 @@ footer .left .icon{
   margin: 0 5px;
 }
 
-.track-bar {
-  min-width: 60px;
-  width: 40%;
-  height: 3px;
-  cursor: pointer;
-}
-
-.track-left {
-  width: calc(20% - 5px);
-  border-radius: 15%;
-  height: 3px;
-}
-
-.track-bar:hover .track-left {
-  background-color: greenyellow;
-}
-
-.track-bar:hover .track-circle {
-  display: block;
-}
-
-.track-right {
-  width: 80%;
-  background-color: #5a5a5a;
-  border-radius: 15%;
-  height: 3px;
-}
-
-
-.track-circle {
-  width: 15px;
-  height: 15px;
-  border-radius: 100%;
-  background-color: white;
-  display: none;
-}
-
 .center .top * {
   margin: 0 5px;
 }
@@ -447,14 +414,49 @@ footer .left .icon{
   margin: 0 20px;
 }
 
+.track-bar {
+  min-width: 60px;
+  width: 40%;
+  height: 3px;
+  cursor: pointer;
+}
+
+.track-left {
+  width: 20%;
+  border-radius: 15%;
+  height: 3px;
+}
+
+.track-right {
+  width: 80%;
+  background-color: #5a5a5a;
+  border-radius: 15%;
+  height: 3px;
+}
+
+.track-circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: white;
+  display: none;
+}
+
+.track-bar:hover .track-left {
+  background-color: greenyellow;
+}
+
+.track-bar:hover .track-circle {
+  display: block;
+}
+
 .volume .track-right {
   width: 60%;
 }
 
 .volume .track-left {
-  width: calc(40% - 5px);
+  width: 40%;
 }
-
 
 footer .right .icon {
   font-size: 0.8rem;
