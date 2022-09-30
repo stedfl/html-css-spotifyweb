@@ -231,7 +231,7 @@ svg.mobile-menu {
 
 .download-img {
   width: 15px;
-  vertical-align: middle;
+  margin-left: -5px;
 }
 
 .avatar img {
@@ -240,7 +240,6 @@ svg.mobile-menu {
   border-radius: 100%;
   width: 20px;
   height: 20px;
-  vertical-align: middle;
 }
 
 /* LEFT-CONTAINER */
